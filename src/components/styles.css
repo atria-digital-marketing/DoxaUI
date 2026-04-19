@@ -48,3 +48,32 @@
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+/* Typography */
+.text, .link, .heading {
+  font-family: 'Raleway', serif;
+}
+.text--is-primary, .link--is-primary, .heading--is-primary { color: var(--doxa-primary, #0066cc); }
+.text--is-secondary, .link--is-secondary, .heading--is-secondary { color: var(--doxa-secondary, #6b7280); }
+.text--is-utility, .link--is-utility, .heading--is-utility { color: var(--doxa-utility, #d97706); }
+.text--is-danger, .link--is-danger, .heading--is-danger { color: var(--doxa-danger, #dc2626); }
+.text--is-neutral-dark, .link--is-neutral-dark, .heading--is-neutral-dark { color: var(--doxa-neutral-dark, #1f2937); }
+
+.text--is-size-xxsmall, .link--is-size-xxsmall, .heading--is-size-xxsmall { font-size: 1.4rem; line-height: 1.4rem; }
+.text--is-size-xsmall, .link--is-size-xsmall, .heading--is-size-xsmall { font-size: 1.6rem; line-height: 1.8rem; }
+.text--is-size-small, .link--is-size-small, .heading--is-size-small { font-size: 1.8rem; line-height: 2rem; }
+.text--is-size-medium, .link--is-size-medium, .heading--is-size-medium { font-size: 2rem; line-height: 3.2rem; }
+.text--is-size-large, .link--is-size-large, .heading--is-size-large { font-size: 2.4rem; line-height: 3.4rem; }
+.text--is-size-xlarge, .link--is-size-xlarge, .heading--is-size-xlarge { font-size: 3.2rem; line-height: 4rem; }
+
+.text--is-weight-light, .link--is-weight-light, .heading--is-weight-light { font-weight: 300; }
+.text--is-weight-default, .link--is-weight-default, .heading--is-weight-default { font-weight: 400; }
+.text--is-weight-semi-bold, .link--is-weight-semi-bold, .heading--is-weight-semi-bold { font-weight: 500; }
+.text--is-weight-bold, .link--is-weight-bold, .heading--is-weight-bold { font-weight: 600; }
+.text--is-weight-heavy-bold, .link--is-weight-heavy-bold, .heading--is-weight-heavy-bold { font-weight: 700; }
+
+.text--is-font-primary, .link--is-font-primary, .heading--is-font-primary { font-family: 'Raleway', serif; }
+.text--is-font-secondary, .link--is-font-secondary, .heading--is-font-secondary { font-family: 'Merriweather', serif; }
+
+.link { color: var(--doxa-utility, #d97706); text-decoration: underline; cursor: pointer; }
+.link:hover { color: var(--doxa-primary, #0066cc); }

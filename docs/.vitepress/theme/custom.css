@@ -6,6 +6,16 @@
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   margin-bottom: 16px;
+  background-color: #858383;
+}
+
+.demo .button,
+.demo .form {
+  text-decoration: none;
+}
+
+.demo a {
+  text-decoration: none;
 }
 
 .demo .button {
@@ -16,6 +26,6 @@
   width: 100%;
 }
 
-.vp-doc h2 {
-  margin-top: 32px;
+.vp-doc a {
+  text-decoration: none;
 }
