@@ -1,0 +1,21 @@
+.demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.demo .button {
+  margin: 0;
+}
+
+.demo .field-group {
+  width: 100%;
+}
+
+.vp-doc h2 {
+  margin-top: 32px;
+}
