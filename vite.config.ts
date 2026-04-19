@@ -18,7 +18,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'DoxaVue',
+      name: 'DoxaUI',
       fileName: 'index',
       formats: ['es', 'umd']
     },

@@ -25,7 +25,7 @@ export default {
   Layout() {
     return h(DefaultTheme.Layout, null, {
       "nav-bar-content-after": () =>
-        h("span", { class: "nav-bar-title" }, "DoxaVue"),
+        h("span", { class: "nav-bar-title" }, "DoxaUI"),
     });
   },
 };

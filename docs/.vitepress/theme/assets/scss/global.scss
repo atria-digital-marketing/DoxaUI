@@ -1,5 +1,14 @@
-@use "@atria-digital-marketing/doxa/scss/elements/button";
-@use "@atria-digital-marketing/doxa/scss/elements/form";
-@use "@atria-digital-marketing/doxa/scss/elements/checkbox";
-@use "@atria-digital-marketing/doxa/scss/elements/radio";
-@use "@atria-digital-marketing/doxa/scss/elements/switch";
+$dx-primary: #0000d6;
+$dx-secondary: #6002ee;
+$dx-utility: #ef0078;
+$dx-text: #212121;
+$dx-neutral-dark: #212121;
+$dx-neutral-light: #eaf6ff;
+
+@use "@atria-digital-marketing/doxa/scss" with (
+  $primary: $dx-primary,
+  $secondary: $dx-secondary,
+  $utility: $dx-utility,
+  $neutral-dark: $dx-neutral-dark,
+  $neutral-light: $dx-neutral-light
+);

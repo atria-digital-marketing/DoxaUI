@@ -40,7 +40,7 @@ A button component built on the Doxa design system.
 
 ```vue
 <script setup>
-import { DXButton } from "doxavue";
+import { DXButton } from "@atria-digital-marketing/doxaui";
 </script>
 
 <template>

@@ -30,7 +30,7 @@ A checkbox component built on the Doxa design system.
 
 ```vue
 <script setup>
-import { DXCheckbox } from 'doxavue'
+import { DXCheckbox } from '@atria-digital-marketing/doxaui'
 import { ref } from 'vue'
 
 const checked = ref(false)
