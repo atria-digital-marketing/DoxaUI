@@ -9,7 +9,6 @@ import {
   DXLink,
   DXHeading,
 } from "../../../src/index";
-import "../../../src/components/styles.css";
 import "./variables.css";
 import "sass";
 import "./assets/scss/global.scss";
