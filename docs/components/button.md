@@ -4,6 +4,7 @@ A button component built on the Doxa design system.
 
 ## Demo
 
+<DXDoc class="dx-helper">
 ### Variants
 
 <div class="demo">
@@ -55,6 +56,8 @@ A button component built on the Doxa design system.
 <DXButton>Normal</DXButton>
 <DXButton disabled>Disabled</DXButton>
 </div>
+
+</DXDoc>
 
 ## Usage
 

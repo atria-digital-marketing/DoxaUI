@@ -16,6 +16,14 @@ const props = defineProps<{
     | "neutral-dark"
     | "neutral"
     | "neutral-light";
+  hoverColor?:
+    | "primary"
+    | "secondary"
+    | "utility"
+    | "danger"
+    | "neutral-dark"
+    | "neutral"
+    | "neutral-light";
   size?: "xxsmall" | "xsmall" | "small" | "medium" | "large" | "xlarge";
   weight?: "light" | "default" | "semi-bold" | "bold" | "heavy-bold";
   fontFamily?: "primary" | "secondary";
@@ -23,9 +31,10 @@ const props = defineProps<{
 
 const copyClasses = computed(() =>
   [
-    props.size ? `copy--is-size-${props.size}` : "",
-    props.weight ? `copy--is-weight-${props.weight}` : "",
-    props.color ? `copy--is-${props.color}` : "",
+    props.size ? `copy--is-${props.size}` : "",
+    props.weight ? `copy--is-${props.weight}` : "",
+    props.color ? `has-text-${props.color}` : "",
+    props.hoverColor ? `has-text-${props.hoverColor}-hover` : "",
     props.fontFamily ? `copy--is-font-${props.fontFamily}` : "",
   ]
     .filter(Boolean)

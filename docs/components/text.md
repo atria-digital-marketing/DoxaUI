@@ -4,6 +4,7 @@ A text component built on the Doxa typography system.
 
 ## Demo
 
+<DXDoc class="dx-helper">
 ### Sizes
 
 <div class="demo">
@@ -41,6 +42,8 @@ A text component built on the Doxa typography system.
   <DXText fontFamily="secondary">Secondary Font</DXText>
 </div>
 
+</DXDoc>
+
 ## Usage
 
 ```vue
@@ -58,6 +61,7 @@ import { DXText } from '@atria-digital-marketing/doxaui'
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
 | `color` | `'primary' \| 'secondary' \| 'utility' \| 'danger' \| 'neutral-dark' \| 'neutral' \| 'neutral-light'` | - | Text color |
+| `hoverColor` | `'primary' \| 'secondary' \| 'utility' \| 'danger' \| 'neutral-dark' \| 'neutral' \| 'neutral-light'` | - | Hover color |
 | `size` | `'xxsmall' \| 'xsmall' \| 'small' \| 'medium' \| 'large' \| 'xlarge'` | - | Text size |
 | `weight` | `'light' \| 'default' \| 'semi-bold' \| 'bold' \| 'heavy-bold'` | - | Font weight |
 | `fontFamily` | `'primary' \| 'secondary'` | - | Font family |

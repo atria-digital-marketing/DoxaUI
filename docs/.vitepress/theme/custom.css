@@ -1,4 +1,4 @@
-.demo {
+.dx-helper .demo {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -9,20 +9,20 @@
   background-color: #858383;
 }
 
-.demo .button,
-.demo .form {
+.dx-helper .demo .button,
+.dx-helper .demo .form {
   text-decoration: none;
 }
 
-.demo a {
+.dx-helper .demo a {
   text-decoration: none;
 }
 
-.demo .button {
+.dx-helper .demo .button {
   margin: 0;
 }
 
-.demo .field-group {
+.dx-helper .demo .field-group {
   width: 100%;
 }
 

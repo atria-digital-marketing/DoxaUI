@@ -4,6 +4,7 @@ An input component built on the Doxa design system.
 
 ## Demo
 
+<DXDoc class="dx-helper">
 ### Basic
 
 <div class="demo">
@@ -26,6 +27,8 @@ An input component built on the Doxa design system.
   <DXInput label="Disabled" placeholder="Disabled" disabled />
   <DXInput label="With Error" placeholder="Error" error="This field is required" />
 </div>
+
+</DXDoc>
 
 ## Usage
 

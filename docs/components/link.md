@@ -4,6 +4,7 @@ A link component built on the Doxa typography system.
 
 ## Demo
 
+<DXDoc>
 ### Sizes
 
 <div class="demo">
@@ -27,17 +28,19 @@ A link component built on the Doxa typography system.
 ### Colors
 
 <div class="demo">
-  <DXLink href="#" color="primary">Primary</DXLink>
+  <DXLink href="#" color="primary" hoverColor="secondary">Primary</DXLink>
   <DXLink href="#" color="secondary">Secondary</DXLink>
   <DXLink href="#" color="utility">Utility</DXLink>
   <DXLink href="#" color="danger">Danger</DXLink>
 </div>
 
+</DXDoc>
+
 ## Usage
 
 ```vue
 <script setup>
-import { DXLink } from '@atria-digital-marketing/doxaui'
+import { DXLink } from "@atria-digital-marketing/doxaui";
 </script>
 
 <template>
@@ -47,11 +50,12 @@ import { DXLink } from '@atria-digital-marketing/doxaui'
 
 ## Props
 
-| Prop | Type | Default | Description |
-|------|------|---------|-------------|
-| `href` | `string` | - | Link URL |
-| `color` | `'primary' \| 'secondary' \| 'utility' \| 'danger' \| 'neutral-dark' \| 'neutral' \| 'neutral-light'` | - | Link color |
-| `size` | `'xxsmall' \| 'xsmall' \| 'small' \| 'medium' \| 'large' \| 'xlarge'` | - | Text size |
-| `weight` | `'light' \| 'default' \| 'semi-bold' \| 'bold' \| 'heavy-bold'` | - | Font weight |
-| `fontFamily` | `'primary' \| 'secondary'` | - | Font family |
-| `target` | `'_blank' \| '_self' \| '_parent' \| '_top'` | - | Link target |
+| Prop         | Type                                                                                                  | Default          | Description |
+| ------------ | ----------------------------------------------------------------------------------------------------- | ---------------- | ----------- |
+| `href`       | `string`                                                                                              | -                | Link URL    |
+| `color`      | `'primary' \| 'secondary' \| 'utility' \| 'danger' \| 'neutral-dark' \| 'neutral' \| 'neutral-light'` | -                | Link color  |
+| `hoverColor` | `'primary' \| 'secondary' \| 'utility' \| 'danger' \| 'neutral-dark' \| 'neutral' \| 'neutral-light'` | `'neutral-dark'` | Hover color |
+| `size`       | `'xxsmall' \| 'xsmall' \| 'small' \| 'medium' \| 'large' \| 'xlarge'`                                 | -                | Text size   |
+| `weight`     | `'light' \| 'default' \| 'semi-bold' \| 'bold' \| 'heavy-bold'`                                       | -                | Font weight |
+| `fontFamily` | `'primary' \| 'secondary'`                                                                            | -                | Font family |
+| `target`     | `'_blank' \| '_self' \| '_parent' \| '_top'`                                                          | -                | Link target |
