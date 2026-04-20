@@ -2,6 +2,7 @@
   <div
     class="switch"
     :class="[
+      classes,
       `switch--is-${color || 'neutral-dark'}`,
       { 'switch--is-reversed': isReversed },
     ]"
@@ -21,6 +22,7 @@
 
 <script setup lang="ts">
 defineProps<{
+  classes?: string;
   id: string;
   modelValue?: boolean;
   label?: string;

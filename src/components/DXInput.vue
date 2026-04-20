@@ -2,12 +2,15 @@
   <div class="form">
     <div
       class="field-group"
-      :class="{
-        'field-group--is-material': isMaterial,
-        'field-group--is-disabled': disabled,
-        'field-group--is-error': error,
-        [`field-group--is-material-${color || 'primary'}`]: isMaterial && color
-      }"
+      :class="[
+        classes,
+        {
+          'field-group--is-material': isMaterial,
+          'field-group--is-disabled': disabled,
+          'field-group--is-error': error,
+          [`field-group--is-material-${color || 'primary'}`]: isMaterial && color
+        }
+      ]"
     >
       <label
         v-if="label"
@@ -47,6 +50,7 @@
 import { computed } from 'vue';
 
 const props = defineProps<{
+  classes?: string;
   modelValue?: string;
   type?: 'text' | 'email' | 'password' | 'number' | 'textarea';
   label?: string;
