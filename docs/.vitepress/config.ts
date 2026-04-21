@@ -19,7 +19,8 @@ export default defineConfig({
           { text: 'Switch', link: '/components/switch' },
           { text: 'Heading', link: '/components/heading' },
           { text: 'Text', link: '/components/text' },
-          { text: 'Link', link: '/components/link' }
+          { text: 'Link', link: '/components/link' },
+          { text: 'Icon', link: '/components/icon' }
         ]
       }
     ],

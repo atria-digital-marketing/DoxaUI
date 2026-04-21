@@ -4,14 +4,19 @@
     :class="[
       classes,
       `checkbox--is-${color || 'neutral-dark'}`,
-      { 'checkbox--is-reversed': isReversed }
+      { 'checkbox--is-reversed': isReversed },
     ]"
+    :for="id"
   >
     <input
       type="checkbox"
+      :id="id"
       :checked="modelValue"
+      :name="name"
       :disabled="disabled"
-      @change="emit('update:modelValue', ($event.target as HTMLInputElement).checked)"
+      @change="
+        emit('update:modelValue', ($event.target as HTMLInputElement).checked)
+      "
     />
     <span v-if="label" class="checkbox__label">{{ label }}</span>
   </label>
@@ -20,14 +25,23 @@
 <script setup lang="ts">
 defineProps<{
   classes?: string;
+  id?: string;
+  name?: string;
   modelValue?: boolean;
   label?: string;
   disabled?: boolean;
-  color?: 'primary' | 'secondary' | 'utility' | 'danger' | 'neutral-dark' | 'neutral' | 'neutral-light';
+  color?:
+    | "primary"
+    | "secondary"
+    | "utility"
+    | "danger"
+    | "neutral-dark"
+    | "neutral"
+    | "neutral-light";
   isReversed?: boolean;
 }>();
 
 const emit = defineEmits<{
-  (e: 'update:modelValue', value: boolean): void;
+  (e: "update:modelValue", value: boolean): void;
 }>();
 </script>
