@@ -29,11 +29,31 @@ A button component built on the Doxa design system.
   <DXButton size="xlarge">XLarge</DXButton>
 </div>
 
+### Dark
+
+<div class="demo">
+  <DXButton isDark>Dark Button</DXButton>
+  <DXButton isDark variant="outlined">Dark Outlined</DXButton>
+</div>
+
+### Links
+
+<div class="demo">
+  <DXButton href="https://example.com">Link Button</DXButton>
+  <DXButton href="https://example.com" target="_blank">External Link</DXButton>
+</div>
+
+### Custom Classes
+
+<div class="demo">
+  <DXButton classes="my-custom-class">Custom Class</DXButton>
+</div>
+
 ### States
 
 <div class="demo">
-  <DXButton>Normal</DXButton>
-  <DXButton disabled>Disabled</DXButton>
+<DXButton>Normal</DXButton>
+<DXButton disabled>Disabled</DXButton>
 </div>
 
 ## Usage
@@ -50,13 +70,17 @@ import { DXButton } from "@atria-digital-marketing/doxaui";
 
 ## Props
 
-| Prop       | Type                                                                                                  | Default     | Description                |
-| ---------- | ----------------------------------------------------------------------------------------------------- | ----------- | -------------------------- |
-| `variant`  | `'solid' \| 'outlined'`                                                                               | -           | Button style variant       |
-| `color`    | `'primary' \| 'secondary' \| 'utility' \| 'danger' \| 'neutral-dark' \| 'neutral' \| 'neutral-light'` | `'primary'` | Button color               |
-| `size`     | `'small' \| 'medium' \| 'large' \| 'xlarge'`                                                          | -           | Button size                |
-| `disabled` | `boolean`                                                                                             | `false`     | Disabled state             |
-| `hasIcon`  | `boolean`                                                                                             | `false`     | Whether button has an icon |
+| Prop        | Type                                                                                                  | Default     | Description                 |
+| ----------- | ----------------------------------------------------------------------------------------------------- | ----------- | --------------------------- |
+| `variant`   | `'solid' \| 'outlined'`                                                                               | -           | Button style variant        |
+| `color`     | `'primary' \| 'secondary' \| 'utility' \| 'danger' \| 'neutral-dark' \| 'neutral' \| 'neutral-light'` | `'primary'` | Button color                |
+| `size`      | `'small' \| 'medium' \| 'large' \| 'xlarge'`                                                          | -           | Button size                 |
+| `isDark`    | `boolean`                                                                                             | `false`     | Dark theme variant          |
+| `disabled`  | `boolean`                                                                                             | `false`     | Disabled state              |
+| `hasIcon`   | `boolean`                                                                                             | `false`     | Whether button has an icon  |
+| `classes`   | `string`                                                                                              | -           | Additional CSS classes      |
+| `href`      | `string`                                                                                              | -           | Link URL (renders as `<a>`) |
+| `target`    | `'_blank' \| '_self' \| '_parent' \| '_top'`                                                          | -           | Link target attribute       |
 
 ## Slots
 
