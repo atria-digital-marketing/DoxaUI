@@ -9,6 +9,7 @@ import {
   DXLink,
   DXHeading,
 } from "../../../src/index";
+import DXDocWrapper from "./components/DXDoc.vue";
 import "./variables.css";
 import "sass";
 import "./assets/scss/global.scss";
@@ -26,6 +27,7 @@ export default {
     app.component("DXText", DXText);
     app.component("DXLink", DXLink);
     app.component("DXHeading", DXHeading);
+    app.component("DXDoc", DXDocWrapper);
   },
   Layout() {
     return h(DefaultTheme.Layout, null, {

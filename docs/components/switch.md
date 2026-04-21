@@ -4,27 +4,30 @@ A toggle switch component built on the Doxa design system.
 
 ## Demo
 
+<DXDoc class="dx-helper">
 ### Basic
 
 <div class="demo">
-  <DXSwitch label="Enable feature" />
+  <DXSwitch id="switch-basic" label="Enable feature" />
 </div>
 
 ### Colors
 
 <div class="demo">
-  <DXSwitch label="Primary" color="primary" />
-  <DXSwitch label="Secondary" color="secondary" />
-  <DXSwitch label="Danger" color="danger" />
+  <DXSwitch id="switch-color-primary" label="Primary" color="primary" />
+  <DXSwitch id="switch-color-secondary" label="Secondary" color="secondary" />
+  <DXSwitch id="switch-color-danger" label="Danger" color="danger" />
 </div>
 
 ### States
 
 <div class="demo">
-  <DXSwitch label="Normal" />
-  <DXSwitch label="Disabled" disabled />
-  <DXSwitch label="Reversed" is-reversed />
+  <DXSwitch id="switch-state-normal" label="Normal" />
+  <DXSwitch id="switch-state-disabled" label="Disabled" disabled />
+  <DXSwitch id="switch-state-reversed" label="Reversed" is-reversed />
 </div>
+
+</DXDoc>
 
 ## Usage
 
