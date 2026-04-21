@@ -2,6 +2,7 @@
   <label
     class="radio"
     :class="[
+      classes,
       `radio--is-${color || 'neutral-dark'}`,
       { 'radio--is-reversed': isReversed }
     ]"
@@ -19,6 +20,7 @@
 
 <script setup lang="ts">
 defineProps<{
+  classes?: string;
   modelValue?: string;
   value?: string;
   label?: string;

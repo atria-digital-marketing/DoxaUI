@@ -1,7 +1,7 @@
 <template>
   <a
     class="link"
-    :class="linkClasses"
+    :class="[classes, linkClasses]"
     :href="href"
     :target="target"
     :rel="target === '_blank' ? 'noopener noreferrer' : undefined"
@@ -14,6 +14,7 @@
 import { computed } from "vue";
 
 const props = defineProps<{
+  classes?: string;
   href: string;
   color?:
     | "primary"

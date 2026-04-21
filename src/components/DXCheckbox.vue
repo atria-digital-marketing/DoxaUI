@@ -2,6 +2,7 @@
   <label
     class="checkbox"
     :class="[
+      classes,
       `checkbox--is-${color || 'neutral-dark'}`,
       { 'checkbox--is-reversed': isReversed }
     ]"
@@ -18,6 +19,7 @@
 
 <script setup lang="ts">
 defineProps<{
+  classes?: string;
   modelValue?: boolean;
   label?: string;
   disabled?: boolean;

@@ -1,5 +1,5 @@
 <template>
-  <p class="copy" :class="copyClasses">
+  <p class="copy" :class="[classes, copyClasses]">
     <slot />
   </p>
 </template>
@@ -8,6 +8,7 @@
 import { computed } from "vue";
 
 const props = defineProps<{
+  classes?: string;
   color?:
     | "primary"
     | "secondary"
