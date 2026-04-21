@@ -6,6 +6,7 @@ export { default as DXSwitch } from './components/DXSwitch.vue';
 export { default as DXText } from './components/DXText.vue';
 export { default as DXLink } from './components/DXLink.vue';
 export { default as DXHeading } from './components/DXHeading.vue';
+export { default as DXIcon } from './components/DXIcon.vue';
 
 import { App } from 'vue';
 
@@ -19,5 +20,6 @@ export default {
     app.component('DXText', () => import('./components/DXText.vue'));
     app.component('DXLink', () => import('./components/DXLink.vue'));
     app.component('DXHeading', () => import('./components/DXHeading.vue'));
+    app.component('DXIcon', () => import('./components/DXIcon.vue'));
   }
 };
