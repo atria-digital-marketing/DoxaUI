@@ -1,5 +1,5 @@
 <template>
-  <component :is="headingTag" class="heading" :class="headingClasses">
+  <component :is="headingTag" class="heading" :class="[classes, headingClasses]">
     <slot />
   </component>
 </template>
@@ -8,6 +8,7 @@
 import { computed } from "vue";
 
 const props = defineProps<{
+  classes?: string;
   level?: "1" | "2" | "3" | "4" | "5" | "6";
   color?:
     | "primary"
