@@ -1,13 +1,3 @@
-<script setup lang="ts">
-defineProps<{
-  variant?: 'solid' | 'outlined';
-  color?: 'primary' | 'secondary' | 'utility' | 'danger' | 'neutral-dark' | 'neutral' | 'neutral-light';
-  size?: 'small' | 'medium' | 'large' | 'xlarge';
-  disabled?: boolean;
-  hasIcon?: boolean;
-}>();
-</script>
-
 <template>
   <button
     class="button"
@@ -26,3 +16,12 @@ defineProps<{
   </button>
 </template>
 
+<script setup lang="ts">
+defineProps<{
+  variant?: 'solid' | 'outlined';
+  color?: 'primary' | 'secondary' | 'utility' | 'danger' | 'neutral-dark' | 'neutral' | 'neutral-light';
+  size?: 'small' | 'medium' | 'large' | 'xlarge';
+  disabled?: boolean;
+  hasIcon?: boolean;
+}>();
+</script>

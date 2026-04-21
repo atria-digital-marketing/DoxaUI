@@ -1,17 +1,3 @@
-<script setup lang="ts">
-defineProps<{
-  modelValue?: boolean;
-  label?: string;
-  disabled?: boolean;
-  color?: 'primary' | 'secondary' | 'utility' | 'danger' | 'neutral-dark' | 'neutral' | 'neutral-light';
-  isReversed?: boolean;
-}>();
-
-const emit = defineEmits<{
-  (e: 'update:modelValue', value: boolean): void;
-}>();
-</script>
-
 <template>
   <div
     class="switch"
@@ -30,3 +16,16 @@ const emit = defineEmits<{
   </div>
 </template>
 
+<script setup lang="ts">
+defineProps<{
+  modelValue?: boolean;
+  label?: string;
+  disabled?: boolean;
+  color?: 'primary' | 'secondary' | 'utility' | 'danger' | 'neutral-dark' | 'neutral' | 'neutral-light';
+  isReversed?: boolean;
+}>();
+
+const emit = defineEmits<{
+  (e: 'update:modelValue', value: boolean): void;
+}>();
+</script>

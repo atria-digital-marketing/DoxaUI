@@ -1,32 +1,3 @@
-<script setup lang="ts">
-import { computed } from 'vue';
-
-const props = defineProps<{
-  modelValue?: string;
-  type?: 'text' | 'email' | 'password' | 'number' | 'textarea';
-  label?: string;
-  placeholder?: string;
-  disabled?: boolean;
-  error?: string;
-  isMaterial?: boolean;
-  color?: 'primary' | 'secondary' | 'utility' | 'danger' | 'neutral-dark' | 'neutral' | 'neutral-light';
-}>();
-
-const emit = defineEmits<{
-  (e: 'update:modelValue', value: string): void;
-}>();
-
-const inputValue = computed({
-  get: () => props.modelValue,
-  set: (value: string) => emit('update:modelValue', value)
-});
-
-const handleInput = (event: Event) => {
-  const target = event.target as HTMLInputElement | HTMLTextAreaElement;
-  emit('update:modelValue', target.value);
-};
-</script>
-
 <template>
   <div class="form">
     <div
@@ -72,3 +43,31 @@ const handleInput = (event: Event) => {
   </div>
 </template>
 
+<script setup lang="ts">
+import { computed } from 'vue';
+
+const props = defineProps<{
+  modelValue?: string;
+  type?: 'text' | 'email' | 'password' | 'number' | 'textarea';
+  label?: string;
+  placeholder?: string;
+  disabled?: boolean;
+  error?: string;
+  isMaterial?: boolean;
+  color?: 'primary' | 'secondary' | 'utility' | 'danger' | 'neutral-dark' | 'neutral' | 'neutral-light';
+}>();
+
+const emit = defineEmits<{
+  (e: 'update:modelValue', value: string): void;
+}>();
+
+const inputValue = computed({
+  get: () => props.modelValue,
+  set: (value: string) => emit('update:modelValue', value)
+});
+
+const handleInput = (event: Event) => {
+  const target = event.target as HTMLInputElement | HTMLTextAreaElement;
+  emit('update:modelValue', target.value);
+};
+</script>
