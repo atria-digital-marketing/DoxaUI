@@ -8,6 +8,7 @@ import {
   DXText,
   DXLink,
   DXHeading,
+  DXIcon,
 } from "../../../src/index";
 import DXDocWrapper from "./components/DXDoc.vue";
 import "./variables.css";
@@ -27,6 +28,7 @@ export default {
     app.component("DXText", DXText);
     app.component("DXLink", DXLink);
     app.component("DXHeading", DXHeading);
+    app.component("DXIcon", DXIcon);
     app.component("DXDoc", DXDocWrapper);
   },
   Layout() {
