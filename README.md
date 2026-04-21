@@ -1,6 +1,6 @@
-# Welcome to DoxaUI
+# DoxaUI
 
-DoxaUI is a Vue 3 component library built on top of the Doxa design system.
+Vue 3 component library based on the [Doxa](https://github.com/atria-digital-marketing/doxa) design system.
 
 ## Installation
 
@@ -47,10 +47,39 @@ import { DXButton, DXInput, DXCheckbox } from '@atria-digital-marketing/doxaui'
 </template>
 ```
 
-## Available Components
+## Components
 
-- [Button](/components/button)
-- [Input](/components/input)
-- [Checkbox](/components/checkbox)
-- [Radio](/components/radio)
-- [Switch](/components/switch)
+- **DXButton** - Button with solid/outlined variants, multiple colors and sizes
+- **DXInput** - Text input with label, placeholder, error states, material style
+- **DXCheckbox** - Checkbox with label and disabled state
+- **DXRadio** - Radio button with label
+- **DXSwitch** - Toggle switch
+
+## Customizing Colors
+
+Create a custom SCSS config to override default colors:
+
+```scss
+// my-doxa-config.scss
+@use "@atria-digital-marketing/doxa/scss/abstracts/initial-variables" with (
+  $dark-blue: #ff6b00,    // primary → your brand color
+  $teal: #00a8cc,        // secondary
+  $dark-red: #e74c3c,     // danger
+);
+
+@use "@atria-digital-marketing/doxa/scss/elements/button" as *;
+```
+
+## Development
+
+```bash
+# Run VitePress documentation
+npm run docs
+
+# Build library
+npm run build
+```
+
+## License
+
+MIT

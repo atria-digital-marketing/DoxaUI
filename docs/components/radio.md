@@ -30,7 +30,7 @@ A radio component built on the Doxa design system.
 
 ```vue
 <script setup>
-import { DXRadio } from 'doxavue'
+import { DXRadio } from '@atria-digital-marketing/doxaui'
 import { ref } from 'vue'
 
 const selected = ref('option1')

@@ -30,7 +30,7 @@ A toggle switch component built on the Doxa design system.
 
 ```vue
 <script setup>
-import { DXSwitch } from 'doxavue'
+import { DXSwitch } from '@atria-digital-marketing/doxaui'
 import { ref } from 'vue'
 
 const enabled = ref(false)

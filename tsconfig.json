@@ -12,7 +12,8 @@
     "emitDeclarationOnly": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "rootDir": "src"
   },
   "include": ["src/**/*.ts", "src/**/*.vue"],
   "exclude": ["node_modules"]

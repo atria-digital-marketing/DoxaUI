@@ -31,7 +31,7 @@ An input component built on the Doxa design system.
 
 ```vue
 <script setup>
-import { DXInput } from 'doxavue'
+import { DXInput } from '@atria-digital-marketing/doxaui'
 import { ref } from 'vue'
 
 const value = ref('')

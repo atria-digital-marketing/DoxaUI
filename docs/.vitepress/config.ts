@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'DoxaVue',
+  title: 'DoxaUI',
   description: 'Vue component library based on Doxa design system',
   themeConfig: {
     nav: [
@@ -21,7 +21,7 @@ export default defineConfig({
       }
     ],
     socialLinks: [
-      { text: 'GitHub', link: 'https://github.com/anomalyco/doxavue' }
+      { text: 'GitHub', link: 'https://github.com/anomalyco/doxaui' }
     ]
   }
 })
