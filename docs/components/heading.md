@@ -4,6 +4,7 @@ A heading component built on the Doxa typography system.
 
 ## Demo
 
+<DXDoc class="dx-helper">
 ### Levels
 
 <div class="demo">
@@ -45,6 +46,8 @@ A heading component built on the Doxa typography system.
   <DXHeading level="1" color="danger">Danger</DXHeading>
 </div>
 
+</DXDoc>
+
 ## Usage
 
 ```vue
@@ -63,6 +66,7 @@ import { DXHeading } from '@atria-digital-marketing/doxaui'
 |------|------|---------|-------------|
 | `level` | `'1' \| '2' \| '3' \| '4' \| '5' \| '6'` | `'1'` | Heading level (renders as h1-h6) |
 | `color` | `'primary' \| 'secondary' \| 'utility' \| 'danger' \| 'neutral-dark' \| 'neutral' \| 'neutral-light'` | - | Text color |
+| `hoverColor` | `'primary' \| 'secondary' \| 'utility' \| 'danger' \| 'neutral-dark' \| 'neutral' \| 'neutral-light'` | - | Hover color |
 | `size` | `'xxsmall' \| 'xsmall' \| 'small' \| 'medium' \| 'large' \| 'xlarge'` | - | Text size |
 | `weight` | `'light' \| 'default' \| 'semi-bold' \| 'bold' \| 'heavy-bold'` | - | Font weight |
 | `fontFamily` | `'primary' \| 'secondary'` | - | Font family |

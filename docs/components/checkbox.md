@@ -4,6 +4,7 @@ A checkbox component built on the Doxa design system.
 
 ## Demo
 
+<DXDoc class="dx-helper">
 ### Basic
 
 <div class="demo">
@@ -25,6 +26,8 @@ A checkbox component built on the Doxa design system.
   <DXCheckbox label="Disabled" disabled />
   <DXCheckbox label="Reversed" is-reversed />
 </div>
+
+</DXDoc>
 
 ## Usage
 
