@@ -31,11 +31,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "peerDependencies": {
-    "vue": "^3.0.0"
-  },
-  "dependencies": {
+    "vue": "^3.0.0",
     "@atria-digital-marketing/doxa": "^0.2.0"
   },
+  "dependencies": {},
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.0",
     "sass-embedded": "^1.99.0",
