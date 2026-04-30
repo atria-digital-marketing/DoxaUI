@@ -4,6 +4,7 @@ A radio component built on the Doxa design system.
 
 ## Demo
 
+<DXDoc class="dx-helper">
 ### Basic
 
 <div class="demo">
@@ -25,6 +26,8 @@ A radio component built on the Doxa design system.
   <DXRadio value="opt2" label="Disabled" disabled model-value="opt1" />
   <DXRadio value="opt3" label="Reversed" is-reversed model-value="opt1" />
 </div>
+
+</DXDoc>
 
 ## Usage
 

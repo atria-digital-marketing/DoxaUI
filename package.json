@@ -13,6 +13,13 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.umd.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "files": [
     "dist"
   ],
@@ -24,16 +31,18 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "peerDependencies": {
+    "@atria-digital-marketing/doxa": "^0.2.0",
     "vue": "^3.0.0"
   },
   "dependencies": {
-    "@atria-digital-marketing/doxa": "^0.2.0"
+    "maska": "^3.2.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.0",
     "sass-embedded": "^1.99.0",
     "typescript": "^6.0.3",
     "vite": "^5.0.0",
+    "vite-svg-loader": "^5.1.1",
     "vitepress": "^1.6.4",
     "vue": "^3.5.32",
     "vue-tsc": "^3.2.7"

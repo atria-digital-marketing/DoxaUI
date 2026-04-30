@@ -1,4 +1,4 @@
-.demo {
+.dx-helper .demo {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -6,16 +6,26 @@
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   margin-bottom: 16px;
+  background-color: #858383;
 }
 
-.demo .button {
+.dx-helper .demo .button,
+.dx-helper .demo .form {
+  text-decoration: none;
+}
+
+.dx-helper .demo a {
+  text-decoration: none;
+}
+
+.dx-helper .demo .button {
   margin: 0;
 }
 
-.demo .field-group {
+.dx-helper .demo .field-group {
   width: 100%;
 }
 
-.vp-doc h2 {
-  margin-top: 32px;
+.vp-doc a {
+  text-decoration: none;
 }
